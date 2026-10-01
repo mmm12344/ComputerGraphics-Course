@@ -40,3 +40,22 @@ python3 hello_opengl.py
 
 See `lab_01_introduction/README.md` for objectives, guided observations,
 exercises and review questions.
+
+## Lab 02 — Hello Window
+
+From this lab on the course follows [learnopengl.com](https://learnopengl.com)
+with **modern OpenGL (3.3 core profile)**: we write the window code and the
+render loop ourselves instead of using `common.py`.
+Linked chapters: *OpenGL*, *Creating a window*, *Hello Window*.
+
+| File | What it does | Run |
+|------|--------------|-----|
+| `lab_02_hello_window/hello_window.py` | The skeleton of every modern OpenGL program: GLFW start-up, OpenGL 3.3 core context, viewport, render loop, ESC to close. | `python3 hello_window.py` |
+| `lab_02_hello_window/window_input.py` | The same skeleton with keyboard input: **R/G/B** change the colour, **SPACE** animates it. | `python3 window_input.py` |
+
+```bash
+cd lab_02_hello_window
+python3 hello_window.py
+```
+
+See `lab_02_hello_window/README.md` for the theory and what to observe.
