@@ -59,3 +59,21 @@ python3 hello_window.py
 ```
 
 See `lab_02_hello_window/README.md` for the theory and what to observe.
+
+## Lab 03 — Hello Triangle
+
+The first shapes drawn with the modern pipeline: vertex data on the GPU, and our own
+vertex and fragment shaders written in GLSL.
+Linked chapter: *Hello Triangle*.
+
+| File | What it does | Run |
+|------|--------------|-----|
+| `lab_03_hello_triangle/hello_triangle.py` | One orange triangle: VBO, VAO, vertex + fragment shader, compile/link error checks, `glDrawArrays`. | `python3 hello_triangle.py` |
+| `lab_03_hello_triangle/hello_rectangle.py` | A rectangle from 4 vertices + 6 indices with an EBO and `glDrawElements`. **W** toggles wireframe mode. | `python3 hello_rectangle.py` |
+
+```bash
+cd lab_03_hello_triangle
+python3 hello_triangle.py
+```
+
+See `lab_03_hello_triangle/README.md` for the theory and what to observe.
