@@ -8,7 +8,7 @@ from the lectures.
 ## Setup
 
 ```bash
-pip install PyOpenGL glfw
+pip install PyOpenGL glfw PyGLM numpy pillow
 ```
 
 | Name | Job |
@@ -77,3 +77,25 @@ python3 hello_triangle.py
 ```
 
 See `lab_03_hello_triangle/README.md` for the theory and what to observe.
+
+## Lab 04 — Shaders
+
+GLSL in more depth: uniforms set from Python, several attributes per vertex and
+interpolation, and a reusable `Shader` class that reads GLSL from files.
+Linked chapter: *Shaders*.
+
+From this lab on, the window start-up code of lab 02 comes from the shared helper
+`glutils.py` (in this folder): `create_window(width, height, title)`.
+
+| File | What it does | Run |
+|------|--------------|-----|
+| `lab_04_shaders/shaders_uniform.py` | A triangle whose green **uniform** follows `sin(time)`. | `python3 shaders_uniform.py` |
+| `lab_04_shaders/shaders_interpolation.py` | Position + colour attributes; red/green/blue corners blend smoothly. | `python3 shaders_interpolation.py` |
+| `lab_04_shaders/shader_class.py` | The **Shader class**, reading `shaders/shader.vs` and `shaders/shader.fs`; an `xOffset` uniform slides the triangle. | `python3 shader_class.py` |
+
+```bash
+cd lab_04_shaders
+python3 shaders_uniform.py
+```
+
+See `lab_04_shaders/README.md` for the theory and what to observe.
