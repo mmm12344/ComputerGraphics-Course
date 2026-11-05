@@ -99,3 +99,24 @@ python3 shaders_uniform.py
 ```
 
 See `lab_04_shaders/README.md` for the theory and what to observe.
+
+## Lab 05 — Textures
+
+Images on shapes: texture coordinates, wrapping, filtering, mipmaps, and two textures
+combined with texture units.
+Linked chapter: *Textures*.
+
+| File | What it does | Run |
+|------|--------------|-----|
+| `lab_05_textures/textures.py` | The container texture on a rectangle, multiplied by vertex colours; texture loading written out step by step. **C** toggles the vertex colours. | `python3 textures.py` |
+| `lab_05_textures/textures_combined.py` | Container + smiley face on two texture units. **UP/DOWN** change the mix, **S** uses coordinates 0..2, **W** cycles wrapping modes, **F** toggles NEAREST/LINEAR. | `python3 textures_combined.py` |
+
+The images are in `resources/textures/`. They are generated procedurally by
+`resources/make_resources.py` (no downloads needed); run it to recreate them.
+
+```bash
+cd lab_05_textures
+python3 textures.py
+```
+
+See `lab_05_textures/README.md` for the theory and what to observe.

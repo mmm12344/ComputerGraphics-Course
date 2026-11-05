@@ -1,0 +1,13 @@
+newmtl torus
+Kd 1 1 1
+Ks 1 1 1
+Ns 64
+map_Kd torus_diffuse.png
+map_Ks torus_specular.png
+
+newmtl crate
+Kd 1 1 1
+Ks 1 1 1
+Ns 32
+map_Kd ../../textures/container2.png
+map_Ks ../../textures/container2_specular.png
