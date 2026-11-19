@@ -120,3 +120,22 @@ python3 textures.py
 ```
 
 See `lab_05_textures/README.md` for the theory and what to observe.
+
+## Lab 06 — Transformations
+
+Vectors and matrices with GLM (PyGLM), and one 4×4 matrix sent to the vertex shader to
+move, rotate and scale a shape.
+Linked chapter: *Transformations*.
+
+| File | What it does | Run |
+|------|--------------|-----|
+| `lab_06_transformations/glm_basics.py` | Console only: every vector and matrix example of the chapter, printed. | `python3 glm_basics.py` |
+| `lab_06_transformations/transformations.py` | A container that rotates in the bottom-right corner, and a second one in the top-left that scales with `sin(time)`. **O** swaps the matrix order. | `python3 transformations.py` |
+
+```bash
+cd lab_06_transformations
+python3 glm_basics.py
+python3 transformations.py
+```
+
+See `lab_06_transformations/README.md` for the theory and what to observe.
